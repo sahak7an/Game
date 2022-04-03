@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html>
-   <head>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
-       <script src="Classes/Gen.js"></script>
-       <script src="Classes/Grass.js"></script>
-       <script src="Classes/GrassEater.js"></script>
-       <script src="Classes/Predator.js"></script>
-       <script src="Classes/Sky.js"></script>
-       <script src="Classes/Human.js"></script>
-       <script src="script.js"></script>
-   </head>
-   <body>
-   </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Game</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="content1">
+            <button onclick="kill()" class="button">Kill</button>
+            <button onclick="weatherSwitcher()" class="button">Weather</button>
+            <button onclick="startAllCode()" class="button">Start</button>
+            <button onclick="restartAllCode()" class="button">Restart</button>
+        </div>
+
+        <div class="content2">
+            <div class="col2">
+                <div class="info">
+                    <h3>Grass</h3>
+                    <h3 id="Grass"></h3>
+                </div>
+                <div class="info">
+                    <h3>GrassEater</h3>
+                    <h3 id="GrassEater"></h3>
+                </div>
+                <div class="info">
+                    <h3>Predator</h3>
+                    <h3 id="Predator"></h3>
+                </div>
+                <div class="info">
+                    <h3>Sky</h3>
+                    <h3 id="Sky"></h3>
+                </div>
+                <div class="info">
+                    <h3>Human</h3>
+                    <h3 id="Human"></h3>
+                </div>
+            </div>
+            <div class="col3" id="canvas">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="script.js"></script>
+</body>
+
 </html>
